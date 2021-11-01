@@ -1,0 +1,115 @@
+﻿.overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+.add-content-page {
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 5% 0% 0% 5%;
+    transition: 1s;
+}
+
+.form-row {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.form-row input[type=text], 
+.form-row select, 
+.form-row textarea, 
+.form-row input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-row textarea {
+    resize: none;
+    height: 400px;
+}
+
+.form-row label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#date, #programming_language {
+    display: none;
+}
+
+#radio {
+    margin: 10px;
+}
+
+input[type=radio] {
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+
+#radio label:not(:first-child) {
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#radio input[type=radio]:checked + label, .radio_temp input[type=radio]:checked + label {
+    background-color: cornflowerblue;
+}
+
+#radio input[type=radio]:focus + label, .radio_temp input[type=radio]:focus + label {
+    border-color: darkturquoise;
+}
+
+#radio label:hover:not(:first-child), .radio_temp label:hover {
+    background-color: aqua;
+}
+
+#addButton {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-content-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    background: none;
+    font-size: 3em;
+    z-index: 3;
+    transition: transform 0.5s;
+}
+
+.add-content-button:hover {
+    background: rgba(0,0,0,0.2);
+}

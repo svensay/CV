@@ -1,0 +1,175 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+}
+
+.all_content {
+    margin: 70px auto auto auto;
+    width: 50%;
+}
+
+.all_content p {
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.content {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*USE FOR CATEGORY BECAUSE OF THE GAP OF HEADER*/
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+}
+
+.card_element {
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    height: 200px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.card_element:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+.element {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    border-radius: 5px;
+}
+
+/*DRAW THE LINE*/
+.element::before {
+    content: '';
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    left: -29px;
+    top: 0;
+    bottom: 0;
+}
+
+/*DRAW THE DOT*/
+.element::after {
+    content: '';
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -5%;
+    left: -40px;
+}
+
+.value {
+    margin: 10px;
+}
+
+.value p {
+    overflow: auto;
+    height: 80px;
+}
+
+.value_disable, .form_edit {
+    display: none;
+}
+
+.form_edit_enable {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#titre_temp, #lp_temp, .radio_temp {
+    border-radius: 4px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.radio_temp label {
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 3px;
+    font-size: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+#descrition_temp {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.cancelButton, .changeButton {
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cancelButton {
+    right: 5px;
+}
+
+.changeButton {
+    right: 70px;
+}
+
+.cancelButton:hover, .changeButton:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.edit_button img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.edit_button img:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.delete_button {
+    transform: rotate(45deg);
+    position: absolute;
+    right: -5px;
+    top: 0;
+    color: black;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    font-size: 2.5em;
+    background: none;
+    cursor: pointer;
+}
