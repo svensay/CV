@@ -121,7 +121,7 @@ require_once("MySQL/mySQL.php");
         </div>
     </div>
 
-    <?php ($connexion); // Close the connexion with mySQL ?>
+    <?php mysqli_close($connexion); // Close the connexion with mySQL ?>
     
     <!--script javascript-->
     <script src="common-function.js"></script>
